@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background-color:bisque;
+    background:linear-gradient(44deg,#1a142c 20%,#12cbac 80%);
+}
+.container{
+        position: relative;
+        max-width: 700px;
+        padding: 10px;
+        margin: 0 auto ;
+}
+
+.addtask{
+    width:100%;
+    display:flex;
+    padding:10px 0;
+     
+}
+
+.btn{
+    color: rgb(109, 25, 178);
+    size: 90px;
+    background:linear-gradient(44deg,#a391e0 20%,#7be7ba 80%);
+    border: 1px;
+    padding: 5px;
+    padding-left: 12px;
+    outline: none;
+    cursor: pointer;
+    text-shadow: #082318;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.txt{
+    width: 100%;
+    height:30px;
+    background:linear-gradient(44deg,#dbd9e1 ,#6fe7ab );
+    border: 4px;
+    size: 16px 0px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline:none;
+}
+
+.ntc,.c{
+      margin: 5px,0;
+      padding:10px;
+      align-items: center;
+}
+
+h3{
+
+    font-size: 20px;
+    text-align: center;
+    color: #9b15b3;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom:20px;
+    background:transparent;
+ }
+
+ ol{
+     list-style:none;
+     counter-reset: my-counter;
+ }
+
+ ol li{
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    background:linear-gradient(44deg,#dbd9e1 ,#6fe7ab );
+    border: 4px;
+    counter-increment: my-counter;
+ }
+
+ ol li::before{
+           content: counter(my-counter);
+           background: #7b27c9;
+           width: 2rem;
+           height: 2rem;
+           border-radius: 40%;
+           display: inline-block;
+           line-height: 2rem;
+           text-align: center;
+           color:rgb(0, 0, 0);
+           margin-right:0.5rem ;
+
+
+ }
+
+ .tsk{
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ li button{
+       float:right;
+       padding: 5px;
+       font-size: 20px;
+       line-height: 2px;
+       margin-right: 2px;
+       background: transparent;
+       border: none;
+       outline: none;
+       cursor: pointer;
+ }
